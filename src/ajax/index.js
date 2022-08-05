@@ -1,3 +1,7 @@
+/**
+ * Ajax封装
+ * @param {*} options { type, url, data, success, fail }
+ */
 const ajax = (options = { type: "GET" }) => {
   const xhr = new XMLHttpRequest();
   options.type = options.type.toUpperCase();
