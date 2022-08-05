@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/styles.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"src.a2b27638.css","sourceRoot":"..","sourcesContent":["body {\n  min-height: 800px;\n}\n\n.wrapper {\n  margin: 10px;\n  padding: 20px;\n  border: 1px solid #ccc;\n}\n\n.wrapper h3 {\n  margin-top: 0;\n}\n"]}
