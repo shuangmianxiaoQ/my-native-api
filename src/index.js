@@ -4,5 +4,7 @@ import "./throttle/test";
 // import "./instanceof/test";
 // import "./new/test";
 // import "./ajax/test";
-import "./bind/test";
+// import "./bind/test";
+// import "./curry/test";
+import "./memoize/test";
 import "./styles.css";
