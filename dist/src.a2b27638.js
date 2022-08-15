@@ -240,13 +240,16 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
  * @returns {*} 目标对象
  */
 var deepClone = function deepClone(obj) {
-  // 如果对象是null或undefined，则不进行拷贝
-  if (obj == null) return null;
+  var cache = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : new WeakMap();
+  // 如果对象是null或undefined或基本类型，则不进行拷贝
+  if (obj == null || _typeof(obj) !== "object") return obj;
   if (obj instanceof Date) return new Date(obj);
-  if (obj instanceof RegExp) return new RegExp(obj); // 如果对象是基本类型，不需要拷贝
+  if (obj instanceof RegExp) return new RegExp(obj); // 如果出现循环引用，则返回缓存的对象，防止递归进入死循环
 
-  if (_typeof(obj) !== "object") return obj;
+  if (cache.has(obj)) return cache.get(obj); //   使用对象所属的构造函数创建一个新对象
+
   var cloneObj = new obj.constructor();
+  cache.set(obj, cloneObj);
 
   for (var key in obj) {
     if (obj.hasOwnProperty(key)) {
