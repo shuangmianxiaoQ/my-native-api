@@ -14,3 +14,4 @@ Created with CodeSandbox
 - [ ] uniqueArray  :star: :star:
 - [ ] Promise.All  :star:
 - [ ] Promise.Race  :star:
+- [ ] curry  :star:
