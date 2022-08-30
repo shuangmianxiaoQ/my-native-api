@@ -1,10 +1,12 @@
-import "./debounce/test";
-import "./throttle/test";
+// import "./debounce/test";
+// import "./throttle/test";
 // import "./deepClone/test";
 // import "./instanceof/test";
 // import "./new/test";
 // import "./ajax/test";
 // import "./bind/test";
 // import "./curry/test";
-import "./memoize/test";
+// import "./memoize/test";
+// import "./scheduler/test";
+import "./promise/test";
 import "./styles.css";
