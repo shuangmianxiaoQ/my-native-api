@@ -20,4 +20,16 @@ const throttle = (fn, delay = 100) => {
   };
 };
 
-export default throttle;
+const throttle2 = (fn, delay = 100) => {
+  let curTime = Date.now();
+  return function () {
+    const nowTime = Date.now();
+    // 如果两次间隔时间超过指定时间，则执行函数
+    if (nowTime - curTime >= delay) {
+      curTime = Date.now();
+      fn.apply(this, arguments);
+    }
+  };
+};
+
+export default throttle2;

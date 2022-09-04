@@ -8,5 +8,9 @@
 // import "./curry/test";
 // import "./memoize/test";
 // import "./scheduler/test";
-import "./promise/test";
+// import "./promise/test";
+// import "./typeof/test";
+// import "./call/test";
+// import "./apply/test";
+// import "./singleton/test";
 import "./styles.css";
