@@ -13,4 +13,9 @@
 // import "./call/test";
 // import "./apply/test";
 // import "./singleton/test";
+// import "./dateFormat/test";
+// import "./disOrderArray/test";
+// import "./flatten/test";
+// import "./list2tree/test";
+import "./parseParam/test";
 import "./styles.css";

@@ -1,3 +1,8 @@
+/**
+ * 实现Promise.all
+ * @param {Promise[]} promises promise实例数组
+ * @returns {Promise}
+ */
 const promiseAll = (promises) => {
   return new Promise((resolve, reject) => {
     const result = [];

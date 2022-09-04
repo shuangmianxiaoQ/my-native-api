@@ -1,3 +1,7 @@
+/**
+ * @param {*} value
+ * @returns {String} 返回类型
+ */
 const getType = (value) => {
   if (value === null) return "null";
   if (typeof value === "object") {
